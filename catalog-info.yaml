@@ -9,7 +9,6 @@ spec:
   targets:
     - ./users-and-groups.yaml
     - ./domains.yaml
-    - ./systems/animal-rescue.yaml
     - ./systems/canary/canary.yaml
     - ./systems/dotnet-todos/dotnet-todos.yaml
     - ./systems/spring-petclinic.yaml
