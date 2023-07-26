@@ -16,7 +16,7 @@ metadata:
   tags:
     - microservice
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=example-app-server'
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=example-app-web'
 spec:
   type: service
   lifecycle: alpha
