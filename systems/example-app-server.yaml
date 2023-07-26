@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: example-app-server
+  description: .NET6 API template
+spec:
+  owner: dev-team-2
+  domain: example-internal-apps
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: example-app-server
+  description: .NET6 API template
+  tags:
+    - microservice
+  annotations:
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=example-app-server'
+spec:
+  type: service
+  lifecycle: alpha
+  owner: dev-team-2
+  system: example-app-server
